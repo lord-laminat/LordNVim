@@ -46,5 +46,8 @@ require("lazy").setup({
   { "williamboman/mason.nvim", build=":MasonUpdate" },
 
   -- TELESCOPE
-  { "nvim-telescope/telescope.nvim", tag="0.1.4", dependencies={'nvim-lua/plenary.nvim'} }
+  { "nvim-telescope/telescope.nvim", tag="0.1.4", dependencies={'nvim-lua/plenary.nvim'} },
+
+  -- FORMATING
+  {'jose-elias-alvarez/null-ls.nvim'}
 })
