@@ -57,5 +57,9 @@ require("lazy").setup({
     -- this is equalent to setup({}) function
   },
   {"akinsho/bufferline.nvim", dependencies = {'nvim-tree/nvim-web-devicons'}},
-
+  {
+    'glepnir/dashboard-nvim',
+    event = 'VimEnter',
+    dependencies = {{'nvim-tree/nvim-web-devicons'}}
+  },
 })
