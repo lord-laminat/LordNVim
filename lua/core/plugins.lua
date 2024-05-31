@@ -13,8 +13,10 @@ vim.opt.rtp:prepend(lazypath)
 
 
 require("lazy").setup({
+    -- HOP
   { "phaazon/hop.nvim" },
 
+  -- NEO-TREE
   {
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v3.x",
@@ -26,7 +28,18 @@ require("lazy").setup({
     }
   },
 
+  -- TREESITTER & LSP
   { "nvim-treesitter/nvim-treesitter" },
   { "neovim/nvim-lspconfig" },
-  { "RRethy/base16-nvim" }
+
+  -- Colorthemes
+  { "RRethy/base16-nvim" },
+
+  -- CMP-autocomplite
+  { "hrsh7th/cmp-nvim-lsp" },
+  { "hrsh7th/cmp-buffer" },
+  { "hrsh7th/cmp-path" },
+  { "hrsh7th/cmp-cmdline" },
+  { "hrsh7th/nvim-cmp" }
+
 })
