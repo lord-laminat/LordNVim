@@ -1,6 +1,6 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
-  vim.fn.system({
+  vim.fn.syste({
     "git",
     "clone",
     "--filter=blob:none",
@@ -42,5 +42,9 @@ require("lazy").setup({
   { "hrsh7th/cmp-cmdline" },
   { "hrsh7th/nvim-cmp" },
 
-  { "williamboman/mason.nvim", build=":MasonUpdate" }
+  -- LAS servers installator
+  { "williamboman/mason.nvim", build=":MasonUpdate" },
+
+  -- TELESCOPE
+  { "nvim-telescope/telescope.nvim", tag="0.1.4", dependencies={'nvim-lua/plenary.nvim'} }
 })
