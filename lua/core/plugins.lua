@@ -14,6 +14,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   { "phaazon/hop.nvim" },
+
   {
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v3.x",
@@ -24,5 +25,8 @@ require("lazy").setup({
       -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
     }
   },
-  { "nvim-treesitter/nvim-treesitter" }
+
+  { "nvim-treesitter/nvim-treesitter" },
+  { "neovim/nvim-lspconfig" },
+  { "RRethy/base16-nvim" }
 })
