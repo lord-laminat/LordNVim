@@ -49,5 +49,12 @@ require("lazy").setup({
   { "nvim-telescope/telescope.nvim", tag="0.1.4", dependencies={'nvim-lua/plenary.nvim'} },
 
   -- FORMATING
-  {'jose-elias-alvarez/null-ls.nvim'}
+  {'jose-elias-alvarez/null-ls.nvim'},
+  { 'windwp/nvim-autopairs',
+    event = "InsertEnter",
+    config = true
+    -- use opts = {} for passing setup options
+    -- this is equalent to setup({}) function
+  },
+
 })
