@@ -43,10 +43,10 @@ require("lazy").setup({
   { "hrsh7th/nvim-cmp" },
 
   -- LAS servers installator
-  { "williamboman/mason.nvim", build=":MasonUpdate" },
+  { "williamboman/mason.nvim"},
 
   -- TELESCOPE
-  { "nvim-telescope/telescope.nvim", tag="0.1.4", dependencies={'nvim-lua/plenary.nvim'} },
+  { "nvim-telescope/telescope.nvim", dependencies={'nvim-lua/plenary.nvim'} },
 
   -- FORMATING
   {'jose-elias-alvarez/null-ls.nvim'},

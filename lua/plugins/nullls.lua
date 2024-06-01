@@ -9,11 +9,10 @@ null_ls.setup({
             "typescriptreact",
             "javascriptreact"
         } },
-        null_ls.builtins.formatting.lua_format,
         null_ls.builtins.diagnostics.eslint_d,
-        null_ls.builtins.formatting.stylua,
-        null_ls.builtins.diagnostics.ltrs,
         null_ls.builtins.formatting.rustfmt,
+        null_ls.builtins.formatting.autopep8,
+        -- null_ls.builtins.formatting.mdformat,
         null_ls.builtins.formatting.prettierd.with { filetypes = {
         "css",
         "scss",
@@ -26,6 +25,7 @@ null_ls.setup({
         "markdown.mdx",
         "graphql",
         "handlebars",
+        "lua",
     },
 }
     },

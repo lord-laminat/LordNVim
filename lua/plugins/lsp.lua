@@ -1,6 +1,6 @@
 -- Setup language servers.
 local lspconfig = require('lspconfig')
-lspconfig.pyright.setup {}
+lspconfig.basedpyright.setup {}
 lspconfig.tsserver.setup {}
 lspconfig.prismals.setup {}
 lspconfig.cssls.setup {
